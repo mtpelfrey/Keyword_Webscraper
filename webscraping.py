@@ -199,7 +199,7 @@ def getFilename():
     else:
         filename = input("The input file was not a valid text file. Please "
                   "provide a valid input text file containing URLs and "
-                  "Service Priorty's.\nSee the README for the correct format:")
+                  "Service Priority's.\nSee the README for the correct format:")
 
     if filename.lower().endswith(('.txt','.text')):
         return filename
