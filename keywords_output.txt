@@ -1,0 +1,26 @@
+This is the output file for webscraping.py.
+
+https://www.cnn.com/2018/06/21/politics/trump-family-separation-executive-order-chaos/index.html
+The keywords for this webpage are:
+immigration
+children
+separations
+reunite
+parents
+
+https://www.nbcnews.com/politics/supreme-court/supreme-court-rules-states-can-require-online-retailers-collect-sales-n873416
+The keywords for this webpage are:
+internet
+online
+collect
+dakota
+retailers
+
+https://en.wikipedia.org/wiki/Triple_Crown_of_Cycling
+The keywords for this webpage are:
+triple
+giro
+tours
+cycling
+grand
+

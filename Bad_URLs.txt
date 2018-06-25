@@ -1,0 +1,3 @@
+This is a list of bas URLs. This file will be created whether or not there are any bad URLs.
+Bad URLs:
+
