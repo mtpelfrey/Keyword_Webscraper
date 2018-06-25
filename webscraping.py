@@ -57,11 +57,13 @@ def enqueueInput(f):
         url = line.rstrip('\n').split(' , ')
         #Assigns the URL an integer priority if the priority is in the standard
         #form, and otherwise assigns the URL the least urgent priority level.
-        if url[1] in priorityDictionary.keys():
-            url[1] = priorityDictionary[url[1]]
-        else:
-            url[1] = 2
-
+        try:
+            if url[1] in priorityDictionary.keys():
+                url[1] = priorityDictionary[url[1]]
+            else:
+                url[1] = 2
+        except IndexError:
+            url.insert(1,2)
         #Enqueues the URLs with associated priority level.
         q.put((url[1], url[0]))
     return q
@@ -96,7 +98,7 @@ def parseHTML(htmlSource):
     #The following for loop pulls just the text from the body sections of the
     #webpage.
     for EachPart in itertools.chain(soup.find_all("div", {"class" : regex}),
-                    soup.find_all("p"), soup.find_all("title")):
+                    soup.find_all("p"), soup.find_all("li"), soup.find_all("title")):
         textToAnalyze += EachPart.get_text()
     return textToAnalyze
 
